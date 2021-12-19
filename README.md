@@ -23,4 +23,6 @@
 ## 実行結果
 
 ## 参考文献
-https://note.nkmk.me/python-pip-install-requirements/
+- https://note.nkmk.me/python-pip-install-requirements/
+- http://objectclub.jp/technicaldoc/monkey/s_wait
+- https://teratail.com/questions/283038
