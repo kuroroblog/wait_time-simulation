@@ -88,7 +88,7 @@ for i in range(len(result)):
         # (例) : 15~45分待たされた人は、15分のグラフに分布する。
         # (例) : 45~75分待たされた人は、45分のグラフに分布する。
         if range_a <= wait_time <= range_b:
-            tmp[j - 1].append(stay_cnt)
+            tmp[j].append(stay_cnt)
             break
 
 y_position_list = []
