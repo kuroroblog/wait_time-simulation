@@ -22,7 +22,7 @@ def arrive():
         time.append(env.now)
         # 人を増やす。
         stay += 1
-        # サービスを受けることのできる状態ならば、queue関数を実行。
+        # サービスを受けることができる状態ならば、queue関数を実行。
         if(canserve):
             env.process(queue())
 
@@ -81,9 +81,9 @@ for _ in range(len(x_position_list)):
 for i in range(len(result)):
     stay_cnt = result[i][0]
     wait_time = result[i][1]
-    for j in range(1, len(x_position_list) - 1):
-        range_a = int(x_position_list[j - 1])
-        range_b = int(x_position_list[j])
+    for j in range(0, len(x_position_list) - 1):
+        range_a = int(x_position_list[j])
+        range_b = int(x_position_list[j + 1])
 
         # (例) : 15~45分待たされた人は、15分のグラフに分布する。
         # (例) : 45~75分待たされた人は、45分のグラフに分布する。
